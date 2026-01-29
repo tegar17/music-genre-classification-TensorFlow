@@ -1,0 +1,55 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual env
+venv/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model / weights
+*.h5
+*.pt
+*.pth
+*.ckpt
+
+# Dataset
+
+data/
+dataset/
+datasets/
+
+# Logs
+logs/
+*.log
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Colab
+/content/
+
+# Output
+output/
+results/
+
+# Abaikan seluruh folder Data dan isinya
+Data/
+
+# Atau jika ingin lebih spesifik mengabaikan file audio di mana saja
+*.wav
+*.mp3
+*.au
+*.json
+data.json
+
+# Abaikan juga folder cache python
+__pycache__/
+.ipynb_checkpoints/
