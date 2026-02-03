@@ -127,3 +127,31 @@ This reshaping step ensures that each sample includes a channel dimension, makin
 
 Overall, this step helped me gain a deeper understanding of how CNNs work for audio classification tasks.
 
+## 4️⃣ Genre Classification using LSTM
+After learning about Recurrent Neural Networks (RNN), I understood that standard RNNs have limitations in remembering long-term context, especially when dealing with long sequences. This happens because important information from earlier time steps can gradually fade as the sequence becomes longer.
+
+To solve this problem, I studied and implemented Long Short-Term Memory (LSTM), which is an advanced form of RNN designed to handle long-term dependencies. LSTM uses memory cells and gating mechanisms to control what information should be remembered or forgotten over time.
+
+As a result, the LSTM-based model demonstrated better capability in learning long-term dependencies and produced more reliable classification results.
+
+📸 Model Performance Comparison
+
+<figure align="center">
+<p align="center">
+  <a href="image/accuracy-RRN.png">
+    <img src="image/accuracy-RRN.png" width="350">
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="image/accuracy-LSTM.png">
+    <img src="image/accuracy-LSTM.png" width="350">
+  </a>
+</p>
+  
+<p align="center">
+  <i>
+    (Left) RNN Accuracy 
+    &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+    (Right) LSTM Accuracy
+  </i>
+</p>
+</figure>
