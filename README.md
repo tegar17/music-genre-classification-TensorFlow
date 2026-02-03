@@ -116,10 +116,14 @@ During training, the model showed signs of overfitting, with training accuracy r
 
 Next, I explored Convolutional Neural Networks (CNN) to build a more powerful model for audio classification. Compared to MLP, CNN can better capture important patterns from MFCC features, making the model more effective in learning audio representations.
 
-At this stage, I learned how convolution and pooling layers help extract useful features and improve model performance. I also understood the importance of preparing input data properly before feeding it into the network, including reshaping it into 4D tensors:
+At this stage, I learned how convolution and pooling layers help extract meaningful features and improve model performance. I also realized that in TensorFlow, CNN models require input data in 4D format when using batch processing. Therefore, it is important to properly prepare and reshape the input data before feeding it into the network.
+
+For example, the training data needs to be converted into a 4D tensor as follows:
 
 ```python
 X_train[..., np.newaxis]  # 4D array -> (num_samples, num_frames, num_mfcc, depth)
 ```
+This reshaping step ensures that each sample includes a channel dimension, making it compatible with CNN layers in TensorFlow.
+
 Overall, this step helped me gain a deeper understanding of how CNNs work for audio classification tasks.
 
